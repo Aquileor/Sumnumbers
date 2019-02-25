@@ -14,7 +14,7 @@ namespace SumNumbers.Tests
         [TestMethod()]
         public void sumTest()
         {
-            Assert.AreEqual((5.5), Program.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+            Assert.AreEqual((7.86), Program.sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 7));
         }
     }
 }
