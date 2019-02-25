@@ -8,14 +8,35 @@ namespace SumNumbers
 {
     public class Program
     {
-        public static double sum(double V1, double V2, double V3, double V4, double V5, double V6, double V7, double V8, double V9, double V10)
+        public static double sum(double V1, double V2, double V3, double V4,
+            double V5, double V6, double V7, double V8, double V9, double V10)
         {
-            double sum = (V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10)/10;
+            double sum = (V1 + V2 + V3 + V4 + V5 + V6 + V7 + V8 + V9 + V10) / 10;
             //return sum;
-            return Math.Round(sum, 2);
+            //return Math.Round(sum, 2
 
-
-
+            
+            if (sum < 59.99)
+            {
+                Console.Write("The avergae grade is F or a ");
+            }
+            else if (sum > 59.99)
+            {
+                Console.Write("The avergae grade is D or a ");
+            }
+            else if (sum > 69.99)
+            {
+                Console.Write("The avergae grade is C or a ");
+            }
+            else if (sum > 79.99)
+            {
+                Console.Write("The avergae grade is B or a ");
+            }
+            else if (sum > 89.99)
+            {
+                Console.Write("The avergae grade is A or a");
+            }
+            return sum;
         }
         static void Main(string[] args)
         {
@@ -32,7 +53,7 @@ namespace SumNumbers
             double V10 = double.Parse(Console.ReadLine());
 
 
-            Console.Write("Sum of 10 values that range between 0 to 100 equals ");
+            //Console.Write("\nSum of 10 values that range between 0 to 100 equals ");
             Console.Write(sum(V1, V2, V3, V4, V5, V6, V7, V8, V9, V10));
             //Console.Write("\nThe avergae grade is");
             //Console.Write();
