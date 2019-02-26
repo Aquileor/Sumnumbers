@@ -11,12 +11,10 @@ namespace SumNumbers.Tests
     [TestClass()]
     public class ProgramTests
     {
-       
-
         [TestMethod()]
-        public void TotalTest()
+        public void sumTest()
         {
-            Assert.AreEqual((78.888), Program.Total(8));
+            Assert.Fail();
         }
     }
 }
